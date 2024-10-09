@@ -1,0 +1,33 @@
+.card_user {
+    min-height: 100px; /* Ensures all cards are at least this height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between elements */
+    text-align: center; /* Center text */
+    background-color: #ffffff; /* إضافة لون خلفية غير شفاف */
+    border: 1px solid #eee; /* إضافة حدود (اختياري) */
+    border-radius: 8px; /* لجعل الحواف مدورة */
+    max-width: 250px; /* تحديد العرض الأقصى للبطة */
+    margin: 10px; /* إضافة مسافة بين البطاقات */
+}
+
+.card-img-top {
+    height: 60px; /* تعديل ارتفاع الصورة */
+    width: 60px; /* تعديل عرض الصورة */
+    object-fit: cover; /* تأكد من أن الصورة تغطي المساحة المحددة دون تشويه */
+    border-radius: 50%; /* لجعل الصورة دائرية */
+    margin: 0 auto; /* لتوسيط الصورة داخل البطاقة */
+}
+
+.card-body {
+    flex-grow: 1; /* Allows body to grow and fill space */
+}
+
+.card-name, .card-email, .card-phone {
+    margin: 0.5rem 0; /* Adjusts spacing between text elements */
+}
+.btn-custom {
+    padding: 0.25rem 0.5rem; /* تقليل الحشو */
+    font-size: 0.75rem; /* تقليل حجم الخط */
+    line-height: 1; /* تقليل ارتفاع السطر */
+}

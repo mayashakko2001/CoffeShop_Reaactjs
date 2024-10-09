@@ -1,0 +1,23 @@
+.header {
+    width: 100%;
+    background-color: #007bff; /* لون أزرق داكن */
+    color: aliceblue;
+    padding: 1% 2%; /* زيادة المساحة الأفقية */
+    text-align: left;
+    font-size: 1.5em; /* زيادة حجم الخط */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+    position: fixed; /* تثبيت الهيدر في الأعلى */
+    top: 0; /* تأكد من وجوده في أعلى الصفحة */
+    z-index: 1000; /* التأكد من أن الهيدر فوق جميع العناصر الأخرى */
+    transition: background-color 0.3s, font-size 0.3s; /* إضافة تأثير الانتقال */
+}
+
+.header.scrolled {
+    background-color: #0056b3; /* لون أزرق أغمق عند التمرير */
+    font-size: 1.2em; /* تقليل حجم الخط عند التمرير */
+}
+
+/* تأكد من أن المحتوى لا يبدأ تحت الهيدر */
+body {
+    margin-top: 60px; /* مسافة كافية تحت الهيدر الثابت */
+}

@@ -1,0 +1,27 @@
+.category-container {
+    padding: 20px; /* إضافة حشوة للحاوية */
+}
+
+.button-row {
+    display: flex; /* استخدام flexbox لعرض الأزرار جنب بعض */
+    flex-wrap: nowrap; /* عدم لف الأزرار */
+    justify-content: center; /* تمركز الأزرار أفقيًا */
+    align-items: center; /* تمركز الأزرار عموديًا */
+    height: 100%; /* تأكد من أن الحاوية تأخذ ارتفاعًا */
+}
+
+.btn {
+    margin: 5px; /* مساحة بين الأزرار */
+    height: 40px; /* ارتفاع ثابت للأزرار */
+    padding: 0 15px; /* إضافة حشوة أفقية */
+    font-size: 14px; /* حجم خط مناسب */
+    border-radius: 4px; /* زوايا مستديرة */
+    cursor: pointer; /* تغيير شكل المؤشر */
+    transition: background-color 0.3s; /* تأثير تفاعلي */
+    width: 250px; /* عرض ثابت للأزرار */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* تغيير لون الخلفية عند التمرير */
+    color: white; /* تغيير لون الخط عند التمرير */
+}
